@@ -7,7 +7,7 @@ from googletrans import LANGUAGES as GT_LANGUAGES
 app = Flask(__name__)
 app.secret_key = secrets.token_hex(32)
 
-GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent"
 load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
